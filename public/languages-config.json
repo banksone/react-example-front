@@ -1,0 +1,25 @@
+{
+    "fallback": "en-US",
+    "pl": {
+        "header_banner":"",
+        "logo":"",
+        "header_title":"Banksone VOD przykład",
+        "info_image_1": "assets/info-image-pl.png",
+        "info_image_2": "",
+        "not_found": "nie znaleziono filmu o pasującym tytule",
+        "documents_found": "pozycje pasujące do zapytania",
+        "placeholder_text": "tytuł filmu > ",
+        "movies": "filmy"
+    },
+    "en-US": {
+        "header_banner":"",
+        "logo":"",
+        "header_title":"Banksone VOD example",
+        "info_image_1": "assets/info-image-en.png",
+        "info_image_2": "",
+        "not_found": "no movies has been found with the title",
+        "documents_found": "movies with the title",
+        "placeholder_text": "movie title > ",
+        "movies": "movies"
+    }
+}
