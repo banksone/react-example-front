@@ -1,5 +1,5 @@
 # React example front application (in progress)
-This is a simple example of React app. It accesses and displays data from REST services provided by java-example-services project (or nodejs-example-services) on port 9080.
+This is a simple example of React app. It accesses and displays data from REST services provided by java-example-services project (or nodejs-example-services) on port 8080 (internally) and 9080 outside of the container.
 
 The code was bootstrapped with [Create React App](https://github.com/facebook/create-react-app) v5.0 tool - which provides ready to use Webpack configuration along with JSX.
 
