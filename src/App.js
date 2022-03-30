@@ -71,7 +71,7 @@ const MoviesList = (props) => {
   }, [arrLength]);
 
   return (
-    <div>
+    <div className="movies-wrapper">
       {movies.length > 0 ? (
         <div className="search-term">{langConfiguration.movies}</div>
       ) : null}
@@ -79,11 +79,13 @@ const MoviesList = (props) => {
         Array.from(movies).map((movie, i) => {
           return (
             <div ref={elRefs[i]} className="movie-item">
-              <i className="fa fa-video-o" />
               <a href={movie.homepage} target="_blank">
-                <div className="movie-title">{movie.title}</div>
+                <i className="fa fa-video-o" />
               </a>
-              <div className="movie-review">{movie.overview}</div>
+              <div className="movie-description">
+                <div className="movie-title">{movie.title}</div>
+                <div className="movie-review">{movie.overview}</div>
+              </div>
             </div>
           );
         })
@@ -102,7 +104,7 @@ function App() {
   const [isLoaded, setLoaded] = useState(false);
   const [movies, setMovies] = useState([]);
   const [usedTerm, setUsedTerm] = useState();
-  const [path, setPath] = useState('');
+  const [path, setPath] = useState("");
   const [doSearch, setDoSearch] = useState(false);
   const [loadingResults, setLoadingResults] = useState(false);
 
@@ -219,7 +221,7 @@ function App() {
               alt=""
             />
           </div>
-          <div className="search-results">
+          <div className="search-results-wrapper">
             <MoviesList
               movies={movies}
               langConfiguration={langConfiguration}

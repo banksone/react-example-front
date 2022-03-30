@@ -10,7 +10,10 @@ $smallscreen: 360px;
 $bocDarkGray: #101010;
 $bocDarkGrayTint: #515254;
 $bocDarkGreen: #1b5a1a;
-$bocGreen: #5f9857;
+$bocGreen: #cac4cc;
+$headerTextColor: #101010;
+$formButtonBcgColorSave: #101010;
+$formButtonColorSave: #dd6514;
 
 .App {
   text-align: center;
@@ -23,7 +26,7 @@ $bocGreen: #5f9857;
     justify-content: center;
     align-items: center;
 
-    .search-results {
+    .movies-wrapper {
       width: 600px;
       border: 3px solid $bocGreen;
       border-radius: 15px;
@@ -46,12 +49,30 @@ $bocGreen: #5f9857;
           color: inherit;
           text-decoration: none;
         }
-        .movie-name {
-          margin-left: 20px;
-        }
+
 
         i {
           color: red;
+          width: 140px;
+        }
+        .movie-description {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-start;
+          text-align: left;
+          margin-bottom: 15px;
+          
+          .movie-title {
+            margin-left: 20px;
+          }
+
+          .movie-review {
+            margin-left: 20px;
+            font-size: smaller;
+            border-top: 1px dotted lightgray;
+            margin-top: 4px;
+            padding-top: 6px;
+          }
         }
       }
       .search-term {
