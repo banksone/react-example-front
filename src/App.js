@@ -78,12 +78,12 @@ const MoviesList = (props) => {
       {movies.length > 0 ? (
         Array.from(movies).map((movie, i) => {
           return (
-            <div ref={elRefs[i]} className="file-item">
+            <div ref={elRefs[i]} className="movie-item">
               <i className="fa fa-video-o" />
               <a href={movie.homepage} target="_blank">
-                <div className="file-name">{movie.title}</div>
-                <div className="file-review">{movie.overview}</div>
+                <div className="movie-title">{movie.title}</div>
               </a>
+              <div className="movie-review">{movie.overview}</div>
             </div>
           );
         })
